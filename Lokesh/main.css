@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+}
+.nav{
+    position: fixed;
+    background-color: #eee;
+    margin-top: 0%;
+    width: 100%;
+    height: 70px;
+}
+.nav .logo{
+    height: 50px;
+    width: 50px;
+    line-height: 70px;
+}
+.nav span{
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    top: 10px;
+    line-height: 70px;
+    margin-left: 10px;
+}
+.nav ul{
+    float: right;
+    margin-right: 20px;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    line-height: 70px;
+}
+.nav ul li a{
+    position: relative;
+    padding: 15px 10px;
+    color: black;
+}
+.nav ul li a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: black;
+    bottom: -6px;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scalex(0);
+    transition: transform .5s;
+}
+.nav ul li a:hover{
+    cursor: pointer;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.search-bar{
+    width: 250px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.search-bar input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+
+}
+.search-bar input::placeholder{
+    color: white;
+}
+.search-bar button{
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar button i{
+    font-size: 22px;
+    color: white;
+}
+
+@media (max-width:768px){
+    .nav  ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(216, 216, 79);
+        text-align: center;
+        padding: 0;
+        top: 50px;
+        left: -100%;
+        transition: 2s;
+    }
+    .nav ul li.slide{
+        left: 0;
+        transition: 2s;
+    }
+    .nav ul li{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .nav ul li a{
+        border: none;
+    }
+    .nav ul li:hover{
+        background-color: black;
+        cursor: pointer;
+    }
+    .nav ul li a:hover{
+        border: none;
+    }
+    .hamburger{
+        float: right;
+        padding-right: 20px;
+        padding-top: 12px;
+    }
+    .hamburger .line{
+        width: 20px;
+        height: 3px;
+        background-color: red;
+        margin-bottom: 4px;
+        display: block;
+    }
+}
+.container1{
+    position: absolute;
+    top: 45%;
+    left: 21%;
+    transform: translate(-55%, -80%);
+    background-color: rgba(255, 0, 0, 0.700);
+    height: 280px;
+    width: 25%;
+    border-radius: 50px;
+    box-shadow: rgb(102, 12, 12);
+}
+.container1:hover{
+    transition: scale(0.5);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #000;  
+}
+.container1 .content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding:50px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container2{
+    position: absolute;
+    background-color:  rgba(255, 0, 0, 0.700);
+    top: 45%;
+    left: 45%;
+    transform: translate(-35%, -80%);
+    height: 280px;
+    width: 25%;
+    border-radius: 50px;
+}
+.container2:hover{
+    transition: scale(0.5);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #000;  
+}
+.container2 .content{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding:50px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container3{
+    position: absolute;
+    background-color:  rgba(255, 0, 0, 0.700);
+    top: 45%;
+    left: 65%;
+    transform: translate(-0%, -80%);
+    height: 280px;
+    width: 25%;
+    border-radius: 50px;
+}
+.container3:hover{
+    transition: scale(0.5);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #000;  
+}
+.container3 .content{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding:50px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+@media only screen and (max-width:768px){
+    .main{
+        float: bottom;
+    }
+    .container1{
+        top: 33.8%;
+        left: 55%;
+        height: 28%;
+        width: 70%;
+    }
+    .container1 .contant{
+        width: 70%;
+    }
+    .container2{
+        top: 63%;
+        left: 40.8%;
+        height: 28%;
+        width: 70%;
+    }
+    .container2 .contant{
+        width: 70%;
+    }
+    .container3{
+        top: 92%;
+        left: 15.8%;
+        height: 28%;
+        width: 70%;
+    }
+    .container1 .contant{
+        width: 70%;
+    }
+}
+footer{
+    position: fixed;
+    padding: 2rem 0;
+    background-color: greenyellow;
+    color: #fff;
+    width: 100%;
+    top: 90%;
+}
+footer .icon a{
+    color: black;
+    margin-left: 10%;
+    display: inline-flex;
+    font-size: 1.35em;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .icon a:hover{
+    transition: transform 0.5s;
+    text-shadow: 2px 2px 10px #000;
+    transition: 500ms;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loku</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<style>
+    .header{
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f2f3f4f5;
+        padding: 20px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    .navbar a{
+        position: relative;
+        font-size: 16px;
+        color: rgb(5, 75, 75);
+        text-decoration: none;
+        font-weight: 300;
+        margin-right: 50px;
+    }
+    .navbar a::after{
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        border-radius: 5px;
+        transform: translateY(10px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .navbar a:hover::after{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .background{
+        height: 100vh;
+        width: 100%;
+        background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRUUrAvqLdBznjFq4UrW8OQWu_9cF8a9uLmyqyLE4AzAZVDOITqd6L8LEM4AElFfC2q2gyjfXGCU24RfTYqHaEirV0VftNOnAJI99G09Ce_OPNYWseO_vad9s3v8N4K97xdhpaInW3pVdISBW_vRDGb4Ox2FTUTB_s3IjpBjfMKgwWm17Zpy__dh-uuQ/s320/back-image.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        width: 75%;
+        height: 550px;
+        background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRUUrAvqLdBznjFq4UrW8OQWu_9cF8a9uLmyqyLE4AzAZVDOITqd6L8LEM4AElFfC2q2gyjfXGCU24RfTYqHaEirV0VftNOnAJI99G09Ce_OPNYWseO_vad9s3v8N4K97xdhpaInW3pVdISBW_vRDGb4Ox2FTUTB_s3IjpBjfMKgwWm17Zpy__dh-uuQ/s320/back-image.png);
+        background-size: cover;
+        background-position: absolute;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow:rgb(5, 75, 75)
+    }
+    .container .content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        background-color: transparent;
+        padding: 80px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container .logrex-box{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        overflow: hidden;
+        width: cal(100% -58%);
+    }
+    .content .logo{
+            width: 10%;
+            
+        }
+        .font{
+            font-size: 50px;
+        }
+        .text-sci h2{
+            font-size: 40px;
+            line-height: 1;
+        }
+        .text-sci h2 span{
+            font-size: 25px;
+        }
+        .text-sci p{
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .social-icons a i{
+            font-size: 22px;
+            color: #0f0c0c;
+            margin-right: 10px;
+            transition: 0.5s ease;
+        }
+        .social-icons a:hover i{
+            transform: scale(1.2);
+        }
+        .logreg-box .form-box{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            color: #110e0e;
+        }
+</style>
+<body>
+    <header class="header">
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">service</a>
+        <a href="#">contact</a>
+    </nav>
+    <form action="#" class="search bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit"><i class="bx bx-search"></i></button>
+    </form>
+    </header>
+    <h1 class="font"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCcXjfI70M-f4AxARVMzJ6ie-D9mOMjTFOUw1cxLW-Mtatr58CfdXSXkUQCMrfIArb5P5q2iTc6NemAY0VskzXhTJ3w8bft2kdSTm6KvD0Ip-zk-zJKjY6kNHrR2uphpDRN8L_LlifNfpMkILKzC4Om-v3pt6MsGPbiPwnoxpqeQyNxC3iBboEZq9lDA/s1600/logo%20(2).png" class="logo">Selfish</h1>
+    <div class="text">
+        <h2>Welcome!<br><span>To Our Selfish Word</span></h2>
+        <p>This our socialmedia platform to be selfish here</p>
+        <div class="social-icon">
+        <a href="#"><i class='bx bxl-facebook'></a>
+        <a href="#"><i class='bx bxl-twitter'></a>
+        <a href="#"><i class='bx bxl-linkedin'></a>
+        <a href="#"><i class='bx bxl-instagram'></a>
+        </div>
+    </div>
+    <div class="logreg-box">
+        <div class="form-box">
+            <form action="#">
+                <h2>Sign In</h2>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="email" required placeholder="E-Mail">
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" required placeholder="Password">
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forget password?</a>
+                </div>
+                <input type="submit" value="Login" name="login" class="btn">
+        
+             
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Sign up</a></p>
+                </div>
+                <div class="form-box register">
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icons"><i class='bx bxs-user'></i></span>
+                            <input type="text" required placeholder="Name">
+                        </div>
+                        <div class="input-box">
+                            <span class="icons"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required placeholder="E-Mail">
+                        </div>
+                        <div class="input-box">
+                            <span class="icons"><i class='bx bxs-lock-alt'></i></span>
+                            <input type="password" required placeholder="Passowrd">
+                        </div>
+                        <div class="remember-forget">
+                            <label><input type="checkbox">I agree to the terms & conditions</label>
+                            
+                        </div>
+                        <button type="submit" class="btn">Sign Up</button>
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#" class="login-link">Sign In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
