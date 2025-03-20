@@ -3,7 +3,7 @@ import { authenticate } from "./api";
 
 function App() {
   useEffect(() => {
-    authenticate(); // Call API when the app loads
+    authenticate();
   }, []);
 
   return (

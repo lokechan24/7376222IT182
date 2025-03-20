@@ -9,7 +9,7 @@ const api = axios.create({
   },
 });
 
-// Function to authenticate using clientID and clientSecret
+
 export const authenticate = async () => {
   try {
     const response = await api.post("/test/register", {
