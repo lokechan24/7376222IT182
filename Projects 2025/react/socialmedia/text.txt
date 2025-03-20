@@ -1,0 +1,9 @@
+API POST
+{
+    "companyName": "afformed",
+    "clientID": "5f4b828c-6675-4950-8d15-e4debab30253",
+    "clientSecret": "KYPtzxlkeQJaPeof",
+    "ownerName": "lokeshwaran",
+    "ownerEmail": "lokeshwaran.it22@bitsathy.ac.in",
+    "rollNo": "7376222IT182"
+}
